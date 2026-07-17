@@ -52,7 +52,7 @@ console.log(`------`);
 // let fact_input = 5;
 let fact = 1;
 
-for (let i = 1; i <= 5; i++) {
+for (let i = 1; i <= fact; i++) {
   fact *= i;
 }
 console.log(`Factorial = ${fact}`);
@@ -118,35 +118,19 @@ console.log(`------`);
 // Write the JavaScript code here:
 
 let isPerfect = 28;
-let dup_isPerfect = isPerfect;
-let perfect_fact = 1;
-let perfect_sum = 1;
+let perfect_sum = 0;
 
-for (let i = 1; i <= isPerfect; i++) {
-  perfect_fact *= i;
+for (let i = 1; i < isPerfect; i++) {
+    if(num % i == 0){
+        perfect_sum +=i;
+    }
 }
-perfect_sum += perfect_fact;
-if (isPerfect == perfect_sum) {
-  console.log(`${isPerfect} is a Perfect Number.`);
-} else {
-  console.log(`${isPerfect} isn't a Perfect Number.`);
+if(perfect_sum == isPerfect){
+    console.log(`${isPerfect} is perfect number`);
+}else{
+    console.log(`${isPerfect} isn't perfect number`);
 }
 
-//another type of perfect number
-// let num = 6;
-// let sum = 0;
-
-// for(let i = 1; i < num; i++){
-//     if(num % i == 0){
-//         console.log(i)
-//         sum +=i;
-//     }
-// }
-// if(sum == num){
-//     console.log(`${num} is perfect number`);
-// }else{
-//     console.log(`${num} isn't perfect number`);
-// }
 
 // 7. Strong Number
 // Question: Write a JavaScript program to strong number.
@@ -273,29 +257,29 @@ if (isLeapYear % 400 === 0 && isLeapYear % 4 === 0 && isLeapYear % 100 !== 0) {
 
 let fact_num1 = 24;
 let fact_num2 = 36;
-let strore_num1 = [];
-let strore_num2 = [];
+let store_num1 = [];
+let store_num2 = [];
 let common = [];
 
 for (let i = 1; i <= fact_num1; i++) {
   if (fact_num1 % i == 0) {
-    strore_num1.push(i);
+    store_num1.push(i);
   }
 }
 for (let j = 1; j <= fact_num2; j++) {
   if (fact_num2 % j == 0) {
-    strore_num2.push(j);
+    store_num2.push(j);
   }
 }
 
-for (let i = 0; i < strore_num2.length; i++) {
-  if (strore_num1.includes(strore_num2[i])) {
-    common.push(strore_num2[i]);
+for (let i = 0; i < store_num2.length; i++) {
+  if (store_num1.includes(store_num2[i])) {
+    common.push(store_num2[i]);
   }
 }
 
 let hcf = common[common.length - 1];
-console.log(`HCF = ${hcf}`);
+console.log(`HCF = ${hcf}`);//[2, 4, 5, 7]
 
 // 13. LCM
 // Question: Write a JavaScript program to lcm.
