@@ -375,3 +375,4 @@ let count_arr = ["HTML", "CSS", "JS"];
 let ind_char = count_arr.join("").split("");
 
 console.log(`Total Characters = ${ind_char.length}`);
+
