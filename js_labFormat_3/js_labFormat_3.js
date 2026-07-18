@@ -121,16 +121,15 @@ let isPerfect = 28;
 let perfect_sum = 0;
 
 for (let i = 1; i < isPerfect; i++) {
-    if(num % i == 0){
-        perfect_sum +=i;
-    }
+  if (num % i == 0) {
+    perfect_sum += i;
+  }
 }
-if(perfect_sum == isPerfect){
-    console.log(`${isPerfect} is perfect number`);
-}else{
-    console.log(`${isPerfect} isn't perfect number`);
+if (perfect_sum == isPerfect) {
+  console.log(`${isPerfect} is perfect number`);
+} else {
+  console.log(`${isPerfect} isn't perfect number`);
 }
-
 
 // 7. Strong Number
 // Question: Write a JavaScript program to strong number.
@@ -279,7 +278,7 @@ for (let i = 0; i < store_num2.length; i++) {
 }
 
 let hcf = common[common.length - 1];
-console.log(`HCF = ${hcf}`);//[2, 4, 5, 7]
+console.log(`HCF = ${hcf}`); //[2, 4, 5, 7]
 
 // 13. LCM
 // Question: Write a JavaScript program to lcm.
@@ -354,7 +353,7 @@ console.log(use_str);
 
 // let deci_num = 1101;
 // let power = 0;
-// let decimal = 0; 
+// let decimal = 0;
 
 // while(deci_num > 0){
 //     let deci_dig = deci_num % 10;
@@ -364,7 +363,6 @@ console.log(use_str);
 // }
 
 // console.log(decimal);
-
 
 // 17. Count Digits
 // Question: Write a JavaScript program to count digits.
